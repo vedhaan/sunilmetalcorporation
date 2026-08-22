@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #2A1B0E;
+  --color-bronze-deep: #6E4419;
+  --color-bronze-core: #9C6B2E;
+  --color-bronze-shine: #EAC98A;
+  --color-cream: #FAF6EF;
+  --color-oxide: #B5502A;
+
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  font-family: var(--font-body);
+}
