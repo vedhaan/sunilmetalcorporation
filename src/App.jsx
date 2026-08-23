@@ -12,7 +12,7 @@ import Contact from './pages/Contact'
 export default function App() {
   return (
     <MotionConfig reducedMotion="user">
-      <div className="bg-cream text-ink min-h-screen flex flex-col">
+      <div className="bg-cream text-ink min-h-screen flex flex-col overflow-x-hidden">
         <Header />
         <main className="flex-1">
           <Routes>

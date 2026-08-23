@@ -1,7 +1,17 @@
+import RfqForm from '../components/contact/RfqForm'
+import OfficeLocation from '../components/contact/OfficeLocation'
+import FactoryLocation from '../components/contact/FactoryLocation'
+import DirectContacts from '../components/contact/DirectContacts'
+import BusinessHours from '../components/contact/BusinessHours'
+
 export default function Contact() {
   return (
-    <div className="min-h-[60vh] flex items-center justify-center">
-      <p className="text-lg text-neutral-500">Contact page — content pending</p>
-    </div>
+    <>
+      <RfqForm />
+      <OfficeLocation />
+      <FactoryLocation />
+      <DirectContacts />
+      <BusinessHours />
+    </>
   )
 }
