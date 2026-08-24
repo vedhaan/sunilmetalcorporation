@@ -24,7 +24,7 @@ const reasons = [
   {
     n: '05',
     title: 'A Family-Run Partnership',
-    desc: 'Direct access to decision-makers — Suresh, Manoj and Sunil Baheti — not a call centre.',
+    desc: 'Direct access to decision-makers — Suresh Baheti, Manoj Baheti and Sunil Baheti — not a call centre.',
   },
   {
     n: '06',

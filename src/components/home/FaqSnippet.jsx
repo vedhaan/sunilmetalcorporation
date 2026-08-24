@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'motion/react'
 const faqs = [
   {
     q: 'What metals does Sunil Metal Corporation deal in?',
-    a: 'Aluminium, copper, lead, zinc, nickel and stainless steel scrap.',
+    a: 'Aluminium, Copper, Lead, Zinc, Nickel and Stainless Steel scrap.',
   },
   {
     q: 'Is Sunil Metal Corporation a certified recycler?',

@@ -8,7 +8,7 @@ const quickLinks = [
   { to: '/contact-rfq', label: 'Contact / RFQ' },
 ]
 
-const badges = ['BIR', 'MRAI', 'ANMA']
+const badges = ['MRAI', 'ANMA']
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="bg-cream rounded-full p-1.5 w-14 h-14 mb-3">
             <img src="/logo.jpg" alt="Sunil Metal Corporation" className="w-full h-full rounded-full object-contain" />
           </div>
-          <p>Importers & Exporters, Ferrous & Non-Ferrous Metal Merchants — Since 1985</p>
+          <p>Importers & Exporters, Ferrous & Non-Ferrous Metal dealers — Since 1985</p>
 
           <div className="flex gap-2 mt-4">
             {badges.map((b) => (
@@ -48,10 +48,10 @@ export default function Footer() {
         <div>
           <p className="font-semibold text-cream mb-2">Office</p>
           <p>103, Neelkanth Plaza, Shahibaug, Ahmedabad – 380 004</p>
-          <p>Tel: (+91 79) 2562 5146</p>
+          {/* <p>Tel: (+91 79) 2562 5146</p> */}
           <p className="font-semibold text-cream mt-3 mb-1">Factory</p>
           <p>243 to 245, G.I.D.C. Ind. Estate, Odhav, Ahmedabad – 382 415</p>
-          <p>Tel: (+91 79) 2287 1981</p>
+          {/* <p>Tel: (+91 79) 2287 1981</p> */}
         </div>
 
         <div>

@@ -30,7 +30,7 @@ export default function Hero() {
       >
         <div>
           <motion.p variants={item} className="font-mono text-xs tracking-[0.2em] uppercase text-bronze-deep mb-5">
-            Est. 1985 · Ahmedabad, Gujarat
+            Sunil Metal Corporation
           </motion.p>
 
           <motion.h1 variants={item} className="font-display text-4xl md:text-6xl font-bold text-ink leading-[1.05] tracking-tight">
@@ -42,8 +42,8 @@ export default function Hero() {
 
           <motion.p variants={item} className="mt-6 text-lg text-ink/70 max-w-xl">
             Sunil Metal Corporation buys, sells and processes ferrous and
-            non-ferrous metal scrap — aluminium, copper, lead, zinc, and
-            stainless steel — as an MRAI Member and ANMA Member.
+            non-ferrous metal scrap — Aluminium, Copper, Lead, Zinc, and
+            Stainless Steel — as an MRAI Member and ANMA Member.
           </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
