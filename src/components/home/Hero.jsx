@@ -51,11 +51,11 @@ export default function Hero() {
         className="relative max-w-6xl mx-auto px-6 py-24 md:py-16 grid lg:grid-cols-2 gap-16 items-center"
       >
         <div>
-          <motion.p variants={item} className="font-mono text-xs tracking-[0.2em] uppercase text-bronze-shine/80 mb-5">
+          <motion.p variants={item} className="font-mono text-sm md:text-base font-bold tracking-[0.2em] uppercase text-bronze-shine/90 mb-5">
             SUNIL METAL CORPORATION
           </motion.p>
 
-          <motion.h1 variants={item} className="font-display text-4xl md:text-6xl font-bold text-cream leading-[1.05] tracking-tight">
+          <motion.h1 variants={item} className="font-display text-3xl md:text-6xl font-bold text-cream leading-[1.05] tracking-tight">
             Aluminium &amp; Metal Scrap Dealers, Trusted{' '}
             <span className="text-bronze-shine underline decoration-oxide decoration-4 underline-offset-4">
               Since 1985
