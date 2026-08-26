@@ -26,8 +26,21 @@ export default function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
         style={{
-          backgroundImage:
-            'radial-gradient(circle at 20% 20%, rgba(234,201,138,0.08), transparent 45%), radial-gradient(circle at 80% 80%, rgba(181,80,42,0.1), transparent 45%)',
+          backgroundImage: `
+            radial-gradient(circle at 20% 20%, rgba(234,201,138,0.1), transparent 45%),
+            radial-gradient(circle at 80% 75%, rgba(181,80,42,0.14), transparent 50%),
+            linear-gradient(rgba(234,201,138,0.035) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(234,201,138,0.035) 1px, transparent 1px),
+            repeating-linear-gradient(45deg, rgba(234,201,138,0.02) 0px, rgba(234,201,138,0.02) 1px, transparent 1px, transparent 10px)
+          `,
+          backgroundSize: 'auto, auto, 44px 44px, 44px 44px, auto',
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: 'radial-gradient(ellipse at 50% 40%, transparent 35%, rgba(42,27,14,0.7) 100%)',
         }}
       />
 
@@ -35,7 +48,7 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
         variants={container}
-        className="relative max-w-6xl mx-auto px-6 py-24 md:py-32 grid lg:grid-cols-2 gap-16 items-center"
+        className="relative max-w-6xl mx-auto px-6 py-24 md:py-16 grid lg:grid-cols-2 gap-16 items-center"
       >
         <div>
           <motion.p variants={item} className="font-mono text-xs tracking-[0.2em] uppercase text-bronze-shine/80 mb-5">
