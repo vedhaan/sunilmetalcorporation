@@ -24,10 +24,14 @@ export default function Header() {
   }, [menuOpen])
 
   return (
-    <header className="bg-ink text-cream relative z-50">
+    <header className="bg-cream text-ink border-b border-ink/10 relative z-50">
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         <Link to="/" aria-label="Sunil Metal Corporation — Home">
-          <img src="/logo.jpg" alt="Sunil Metal Corporation" className="h-14 w-14 rounded-full object-cover" />
+          <img
+            src="/logo-remove.jpg"
+            alt="Sunil Metal Corporation"
+            className="h-14 w-22"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -37,8 +41,8 @@ export default function Header() {
               to={link.to}
               className={({ isActive }) =>
                 isActive
-                  ? 'text-bronze-shine font-semibold'
-                  : 'text-cream hover:text-bronze-shine transition-colors'
+                  ? 'text-oxide font-semibold'
+                  : 'text-ink/80 hover:text-oxide transition-colors'
               }
             >
               {link.label}
@@ -48,7 +52,7 @@ export default function Header() {
 
         <Link
           to="/contact-rfq"
-          className="hidden md:inline-block bg-bronze-core hover:bg-bronze-deep text-cream text-sm font-semibold px-4 py-2 rounded transition-colors"
+          className="hidden md:inline-block bg-oxide hover:bg-bronze-deep text-cream text-sm font-semibold px-4 py-2 rounded transition-colors"
         >
           Request a Quote
         </Link>
@@ -61,15 +65,15 @@ export default function Header() {
         >
           <motion.span
             animate={{ rotate: menuOpen ? 45 : 0, y: menuOpen ? 6.5 : 0 }}
-            className="w-6 h-0.5 bg-cream block origin-center transition-colors"
+            className="w-6 h-0.5 bg-ink block origin-center transition-colors"
           />
           <motion.span
             animate={{ opacity: menuOpen ? 0 : 1 }}
-            className="w-6 h-0.5 bg-cream block"
+            className="w-6 h-0.5 bg-ink block"
           />
           <motion.span
             animate={{ rotate: menuOpen ? -45 : 0, y: menuOpen ? -6.5 : 0 }}
-            className="w-6 h-0.5 bg-cream block origin-center transition-colors"
+            className="w-6 h-0.5 bg-ink block origin-center transition-colors"
           />
         </button>
       </div>
@@ -83,7 +87,7 @@ export default function Header() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
               onClick={() => setMenuOpen(false)}
-              className="fixed inset-0 bg-ink/70 backdrop-blur-sm md:hidden"
+              className="fixed inset-0 bg-ink/40 backdrop-blur-sm md:hidden"
             />
 
             <motion.div
@@ -91,7 +95,7 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed top-0 right-0 bottom-0 w-72 max-w-[80%] bg-ink border-l border-bronze-deep/40 md:hidden flex flex-col px-6 py-8"
+              className="fixed top-0 right-0 bottom-0 w-72 max-w-[80%] bg-cream border-l border-ink/10 md:hidden flex flex-col px-6 py-8"
             >
               <nav className="flex flex-col gap-1 mt-16">
                 {navLinks.map((link) => (
@@ -99,8 +103,8 @@ export default function Header() {
                     key={link.to}
                     to={link.to}
                     className={({ isActive }) =>
-                      `py-3 border-b border-cream/10 text-base ${
-                        isActive ? 'text-bronze-shine font-semibold' : 'text-cream'
+                      `py-3 border-b border-ink/10 text-base ${
+                        isActive ? 'text-oxide font-semibold' : 'text-ink'
                       }`
                     }
                   >
@@ -111,7 +115,7 @@ export default function Header() {
 
               <Link
                 to="/contact-rfq"
-                className="mt-8 text-center bg-bronze-core hover:bg-bronze-deep text-cream text-sm font-semibold px-4 py-3 rounded transition-colors"
+                className="mt-8 text-center bg-oxide hover:bg-bronze-deep text-cream text-sm font-semibold px-4 py-3 rounded transition-colors"
               >
                 Request a Quote
               </Link>
