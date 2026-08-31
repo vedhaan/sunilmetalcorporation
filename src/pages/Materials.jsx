@@ -17,8 +17,8 @@ export default function Materials() {
         flagship
         accent="#9C9C9C"
         bg="plain"
-        description="Aluminium is our core specialisation. We buy and sell a wide range of aluminium scrap grades for recycling into secondary aluminium, including used beverage cans (UBC), extrusion scrap, sheet and clippings, wire & cable, castings, and turnings & borings."
-        forms={['UBC', 'Extrusion Scrap', 'Sheet / Clippings', 'Wire & Cable', 'Castings', 'Turnings & Borings', 'Taint/Tabor']}
+        description="Aluminium is our core specialisation. We buy and sell a wide range of aluminium scrap grades for recycling into secondary aluminium, including used beverage cans."
+        forms={['Sheet / Clippings', 'Castings', 'Turnings & Borings']}
         whatsappLabel="Enquire about Aluminium Scrap on WhatsApp"
       />
 
@@ -53,8 +53,8 @@ export default function Materials() {
         name="Zinc Scrap"
         accent="#8A9096"
         bg="tint"
-        description="We supply and buy zinc scrap, including die-cast and industrial zinc off-cuts, for galvanising and alloy manufacturers."
-        forms={['Die-Cast', 'Industrial Off-Cuts']}
+        description="We supply and buy zinc scrap"
+        forms={['Industrial Off-Cuts']}
         whatsappLabel="Enquire about Zinc Scrap on WhatsApp"
       />
 
@@ -65,8 +65,8 @@ export default function Materials() {
         name="Stainless Steel Scrap"
         accent="#6E7681"
         bg="plain"
-        description="Our stainless steel scrap trading covers sheet, coil and fabrication scrap for re-melters and manufacturers."
-        forms={['Sheet', 'Coil', 'Fabrication Scrap']}
+        description="Our stainless steel scrap trading covers and fabrication scrap for re-melters and manufacturers across India."
+        forms={['Fabrication Scrap']}
         whatsappLabel="Enquire about Stainless Steel Scrap on WhatsApp"
       />
 
@@ -78,7 +78,7 @@ export default function Materials() {
         accent="#9C6B2E"
         bg="tint"
         description="We supply secondary aluminium ingots in a range of purity grades, produced from processed aluminium scrap for manufacturers requiring consistent, certified input material."
-        forms={['97%', '98%', '98.5%', '99%']}
+        forms={['96%', '97%', '98%', '98.5%', '99%']}
         formsLabel="Purity Grades Available"
         whatsappLabel="Enquire about Ingot on WhatsApp"
       />
