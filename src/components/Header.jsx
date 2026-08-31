@@ -30,7 +30,7 @@ export default function Header() {
           <img
             src="/logo-remove.jpg"
             alt="Sunil Metal Corporation"
-            className="h-20 w-20 md:h-24 md:w-28"
+            className="h-20 w-30 md:h-24 md:w-32"
           />
         </Link>
 
