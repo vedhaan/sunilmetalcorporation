@@ -30,7 +30,7 @@ export default function Header() {
           <img
             src="/logo-remove.jpg"
             alt="Sunil Metal Corporation"
-            className="h-18 w-24"
+            className="h-20 w-20 md:h-24 md:w-28"
           />
         </Link>
 
@@ -103,8 +103,7 @@ export default function Header() {
                     key={link.to}
                     to={link.to}
                     className={({ isActive }) =>
-                      `py-3 border-b border-ink/10 text-base ${
-                        isActive ? 'text-oxide font-semibold' : 'text-ink'
+                      `py-3 border-b border-ink/10 text-base ${isActive ? 'text-oxide font-semibold' : 'text-ink'
                       }`
                     }
                   >

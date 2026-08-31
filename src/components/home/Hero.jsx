@@ -51,9 +51,11 @@ export default function Hero() {
         className="relative max-w-6xl mx-auto px-6 py-24 md:py-16 grid lg:grid-cols-2 gap-16 items-center"
       >
         <div>
-          <motion.p variants={item} className="font-mono text-sm md:text-base font-bold tracking-[0.2em] uppercase text-bronze-shine/90 mb-5">
-            SUNIL METAL CORPORATION
+          <motion.p variants={item} className="font-display text-2xl md:text-4xl font-bold tracking-wide uppercase text-bronze-shine mb-5">
+            Sunil Metal Corporation
           </motion.p>
+
+          <motion.h1 variants={item} className="font-display text-xl md:text-3xl font-bold text-cream leading-snug tracking-tight"></motion.h1>
 
           <motion.h1 variants={item} className="font-display text-3xl md:text-6xl font-bold text-cream leading-[1.05] tracking-tight">
             Aluminium &amp; Metal Scrap Dealers, Trusted{' '}
@@ -62,7 +64,7 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          <motion.p variants={item} className="mt-6 text-lg text-cream/60 max-w-xl">
+          <motion.p variants={item} className="mt-6 text-sm md:text-base text-cream/60 max-w-xl">
             Sunil Metal Corporation buys, sells and processes ferrous and
             non-ferrous metal scrap — aluminium, copper, lead, zinc, and
             stainless steel — as an MRAI Member and ANMA Member.

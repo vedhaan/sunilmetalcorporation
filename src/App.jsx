@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { MotionConfig } from 'motion/react'
+import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
@@ -12,6 +13,7 @@ import Contact from './pages/Contact'
 export default function App() {
   return (
     <MotionConfig reducedMotion="user">
+      <ScrollToTop />
       <div className="bg-cream text-ink min-h-screen flex flex-col overflow-x-hidden">
         <Header />
         <main className="flex-1">
