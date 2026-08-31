@@ -1,7 +1,8 @@
 import { motion } from 'motion/react'
 
-const address = '243 to 245, G.I.D.C. Ind. Estate, Bhikshuk Gruh Road, Odhav, Ahmedabad – 382 415, Gujarat, India'
-const mapQuery = encodeURIComponent(address)
+const address = '103, Neelkanth Plaza, Opp. New Madhupura Market, Shahibaug, Ahmedabad – 380 004, Gujarat, India'
+const mapEmbedSrc = 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d891.8908029997133!2d72.65259196294497!3d23.020072029681124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDAxJzEzLjQiTiA3MsKwMzknMTIuMyJF!5e0!3m2!1sen!2sin!4v1788169635702!5m2!1sen!2sin'
+const mapQuery = address.replace(/\s+/g, '+')
 
 export default function FactoryLocation() {
   return (
@@ -16,12 +17,13 @@ export default function FactoryLocation() {
             className="relative order-2 md:order-1 min-h-[320px] md:min-h-full rounded-2xl overflow-hidden border border-ink/10 shadow-md"
           >
             <iframe
-              title="Sunil Metal Corporation — Factory Location"
-              src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
+              title="Sunil Metal Corporation — Office Location"
+              src={mapEmbedSrc}
               className="absolute inset-0 w-full h-full"
               style={{ border: 0 }}
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             />
           </motion.div>
 
@@ -77,7 +79,7 @@ export default function FactoryLocation() {
             </div>
 
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+              href={`https://www.google.com/maps/search/?api=1&query=${mapEmbedSrc}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-8 font-semibold text-ink border-2 border-ink rounded-full px-6 py-2.5 hover:bg-ink hover:text-cream transition-colors w-fit group"
