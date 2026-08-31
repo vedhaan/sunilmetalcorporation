@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
         <div>
           <div className="w-32 h-22 mb-3">
-            <img src="/logo-remove.jpg" alt="Sunil Metal Corporation" className="w-full h-full rounded-full object-contain" />
+            <img src="/logo-remove.jpg" alt="Sunil Metal Corporation" className="w-full h-full" />
           </div>
           <p className="text-ink/70">Importers & Exporters, Ferrous & Non-Ferrous Metal dealers — Since 1985</p>
 
