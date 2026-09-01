@@ -4,7 +4,7 @@ import { motion } from 'motion/react'
 const photos = [
   { src: '/gallery/facility-1.jpg', alt: 'Sunil Metal Corporation processing facility', rotate: '-rotate-6', z: 'z-10', offset: '' },
   { src: '/gallery/facility-2.jpg', alt: 'Sunil Metal Corporation facility floor', rotate: 'rotate-0', z: 'z-20', offset: 'md:-mt-6' },
-  { src: '/gallery/certificate-1.jpg', alt: 'MRAI / ANMA membership certificate', rotate: 'rotate-6', z: 'z-10', offset: '' },
+  { src: '/gallery/facility-3.jpg', alt: 'Sunil Metal Corporation quality control area', rotate: 'rotate-6', z: 'z-10', offset: '' },
 ]
 
 export default function CertificationsTeaser() {
@@ -21,7 +21,7 @@ export default function CertificationsTeaser() {
             Inside SMC
           </p>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-ink leading-tight">
-            See Our Facility &amp; Certifications
+            See Our Facility
           </h2>
           <p className="mt-5 text-ink/70 leading-relaxed max-w-md">
             From our processing floor in Odhav GIDC to our MRAI and ANMA
@@ -33,7 +33,7 @@ export default function CertificationsTeaser() {
             to="/certifications-facility-gallery"
             className="inline-flex items-center gap-2 font-semibold text-ink border-2 border-ink rounded-full px-6 py-2.5 mt-8 hover:bg-ink hover:text-cream transition-colors group"
           >
-            See inside our facility and certifications
+            See inside our facility
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </Link>
         </motion.div>

@@ -1,6 +1,6 @@
 import { motion } from 'motion/react'
 
-const address = '103, Neelkanth Plaza, Opp. New Madhupura Market, Shahibaug, Ahmedabad – 380 004, Gujarat, India'
+const address = '243 to 245, G.I.D.C. Ind. Estate, Odhav, Ahmedabad – 382 415'
 const mapEmbedSrc = 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d891.8908029997133!2d72.65259196294497!3d23.020072029681124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDAxJzEzLjQiTiA3MsKwMzknMTIuMyJF!5e0!3m2!1sen!2sin!4v1788169635702!5m2!1sen!2sin'
 const mapQuery = address.replace(/\s+/g, '+')
 

@@ -66,8 +66,8 @@ export default function Hero() {
 
           <motion.p variants={item} className="mt-6 text-sm md:text-base text-cream/60 max-w-xl">
             Sunil Metal Corporation buys, sells and processes ferrous and
-            non-ferrous metal scrap — aluminium, copper, lead, zinc, and
-            stainless steel.
+            non-ferrous metal scrap — Aluminium, Copper, Lead, Zinc, and
+            Stainless Steel.
           </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">

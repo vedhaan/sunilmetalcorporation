@@ -78,9 +78,25 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-ink/10 text-center text-xs py-4 text-ink/50 space-y-1">
-        <p>© {new Date().getFullYear()} Sunil Metal Corporation. All rights reserved.</p>
-        <p className="text-ink/35">GST: 24AAVPB1273H1ZS</p>
+      <div className="border-t border-ink/10 text-xs py-4 text-ink/50">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-2 sm:pr-24">
+          <div className="text-center sm:text-left space-y-0.5">
+            <p>© {new Date().getFullYear()} Sunil Metal Corporation. All rights reserved.</p>
+            <p className="text-ink/35">GSTIN: 24AAVPB1273H1ZS</p>
+          </div>
+
+          {/* <p className="text-ink/35 text-center sm:text-right">
+            Website by{' '}
+            <a
+              href="https://vedhaantechnology.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-oxide transition-colors"
+            >
+              Vedhaan Technology
+            </a>
+          </p> */}
+        </div>
       </div>
     </footer>
   )

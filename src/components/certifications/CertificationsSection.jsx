@@ -41,11 +41,11 @@ function CertCard({ c }) {
       >
         {/* inner double-border mat, like a real certificate frame */}
         <div className="relative border border-bronze-core/25 rounded-xl p-2">
-          <div className="relative aspect-[4/3] bg-ink/5 border-2 border-bronze-deep/20 rounded-lg overflow-hidden">
+          <div className="relative h-64 sm:h-80 md:h-96 bg-ink/[0.03] border-2 border-bronze-deep/20 rounded-lg overflow-hidden flex items-center justify-center">
             <img
               src={c.image}
               alt={`${c.name} certificate`}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
             />
           </div>
 
@@ -116,7 +116,7 @@ export default function CertificationsSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={container}
-          className="grid md:grid-cols-2 gap-16 lg:gap-24 max-w-5xl mx-auto"
+          className="grid md:grid-cols-2 gap-16 lg:gap-24 max-w-5xl mx-auto items-start"
         >
           {certifications.map((c) => (
             <CertCard key={c.code} c={c} />

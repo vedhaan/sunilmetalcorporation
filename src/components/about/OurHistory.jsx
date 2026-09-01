@@ -9,7 +9,7 @@ const milestones = [
   {
     year: 'Growth',
     title: 'Full Import-Export Operation',
-    desc: 'Expanded across aluminium, copper, lead, zinc, nickel and stainless steel.',
+    desc: 'Expanded across Aluminium, Copper, Lead, Zinc, Nickel and Stainless Steel.',
   },
   {
     year: 'Membership',
@@ -80,7 +80,7 @@ export default function OurHistory() {
             Founded in 1985 in Ahmedabad, Gujarat, Sunil Metal Corporation
             began with a simple focus: reliable, honest trading in ferrous
             and non-ferrous metal scrap. Over four decades, that focus grew
-            into a full import-export operation.
+            into a full Import-Export operation.
           </p>
         </motion.div>
 
