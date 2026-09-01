@@ -78,6 +78,7 @@ export default function Footer() {
         </div>
       </div>
 
+      <div className="border-t border-ink/10 text-xs py-4 text-ink/50">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-2 sm:pr-24">
           <div className="text-center sm:text-left space-y-0.5">
             <p>© {new Date().getFullYear()} Sunil Metal Corporation. All rights reserved.</p>
