@@ -47,7 +47,7 @@ export default function TrustStrip() {
             key={b.code}
             variants={item}
             whileHover={{ rotate: 0 }}
-            className={`relative border border-bronze-deep/60 bg-ink px-6 py-8 text-center transition-transform ${b.rotate}`}
+            className={`relative border border-bronze-deep/60 bg-ink px-6 py-8 text-center transition-transform`}
           >
             <Corners />
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-bronze-shine/60">
